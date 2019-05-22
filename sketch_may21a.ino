@@ -60,17 +60,17 @@ void loop(){
     WaterPercentage = 0.0;
   }
 
-  if ((valor_s1 == 1) && valor_s2 == 0 && valor_s3 == 0){
+  else if ((valor_s1 == 1) && valor_s2 == 0 && valor_s3 == 0){
     Serial.print("Nível alarmante de água, entre 25% e 50%\n");
     WaterPercentage = 25.0;
   }
 
-  if (valor_s2 == 1 && valor_s3 == 0){
+  else if (valor_s2 == 1 && valor_s3 == 0){
     Serial.print("Nível regular de água, entre 50% e 75%\n");
     WaterPercentage = 50.0;
   }
 
-  if (valor_s3 == 1){
+  else if (valor_s3 == 1){
     Serial.print("Nível ótimo de água, entre 75% e 100%\n");
     WaterPercentage = 75.0;
   }
